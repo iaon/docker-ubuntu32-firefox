@@ -4,12 +4,11 @@ Dockerized 32-bit Firefox that works with Cisco WebEx, based on 32-bit Ubuntu (s
 
 ## Build
 
-	docker build -t ouyi/docker-ubuntu32-firefox .
+	docker build -t iaon/docker-ubuntu32-firefox:custom .
 
 ## Run
 
-	xhost local:$(whoami)
-	docker run --rm -ti -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY ouyi/docker-ubuntu32-firefox
+`./run.sh`
 
 ## Known issues
 
