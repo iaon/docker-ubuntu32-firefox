@@ -10,4 +10,4 @@ RUN apt-get -y install iputils-ping firefox openjdk-7-jre icedtea-7-plugin libpa
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-CMD ["/usr/bin/firefox"]
+CMD ["/usr/bin/firefox", "-no-remote", "--new-instance"]
