@@ -25,5 +25,6 @@ The error was 'BadAccess (attempt to access private resource denied)'.
    backtrace from your debugger if you break on the gdk_x_error() function.)
 ```
 
-It happens due to https://bugzilla.mozilla.org/show_bug.cgi?id=1286649 Fixed in FF50 but it's not usable yet.
+It happens due to https://bugzilla.mozilla.org/show_bug.cgi?id=1286649 Current stable version of Firefox is not thread safe with X. Fixed in FF50 but it's not usable yet.
 Just start it again.
+Using an additional mount points increases the risk of this error.
